@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 // The form Title goes in this component
-class Header extends Component {
+class FormHeader extends Component {
   render(){
     return (
       <div className="text-center col-12 my-5">
@@ -14,4 +14,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default FormHeader;

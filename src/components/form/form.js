@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import Header from "./form_header";
+import FormHeader from "./form_header";
+import FormSeach from './form_search';
 
 class Form extends Component {
   render(){
     return (
         <form>
-            <Header />
+            <FormHeader />
+            <FormSeach />
         </form>
     )
   };
