@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Disa Poc</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+  crossorigin="anonymous">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <form>
+        <div class="text-center col-12 my-5">
+            <h3 class="my-3 text-muted"><strong>FSR</strong></h3>
+            <h6 class="my-3 text-muted"><strong>FORMULÁRIO DE SOLICITAÇÃO PARA A DETENCÇÃO QUALITATIVA DO DNA PROVIRAL DO HIV-1</strong></h6> 
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row g-3 align-items-center">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <label for="nr_de_ordem" class="col-form-label float-left text-muted">Nr. Ordem:</label>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 align-items-center">
+                        <input type="text" id="nr_de_ordem" class="form-control" name="nr_de_ordem">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row g-3 align-items-center">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <label for="nr_de_laboratorio" class="col-form-label float-left text-muted">Nr. de Laboratório:</label>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <input type="text" id="nr_de_laboratorio" class="form-control" name="nr_de_laboratorio">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-center col-12 my-4 bg-light">
+                <h6 class="my-4 text-muted"><strong>A PREENCHER PELO POSTO DE COLHEITA</strong></h6> 
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row g-3 align-items-center">
+                    <div class="col-sm-12 col-md-5 col-lg-5">
+                        <label for="provincia" class="col-form-label float-right text-muted">Província:</label>
+                    </div>
+                    <div class="col-sm-12 col-md-7 col-lg-7">
+                        <select class="form-control" id="provincia" name="provincia">
+                            <option selected>Província</option>
+                            <option value="0">Maputo Província</option>
+                            <option value="1">Maputo Cidade</option>
+                            <option value="2">Gaza</option>
+                            <option value="3">Inhambane</option>
+                            <option value="4">Sofala</option>
+                            <option value="5">Manica</option>
+                            <option value="6">Zambézia</option>
+                            <option value="7">Tete</option>
+                            <option value="8">Nampula</option>
+                            <option value="9">Lichinga</option>
+                            <option value="10">Cabo Delgado</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row g-3 align-items-center">
+                    <div class="col-sm-12 col-md-5 col-lg-5">
+                        <label for="distrito" class="col-form-label float-right text-muted">Distrito:</label>
+                    </div>
+                    <div class="col-sm-12 col-md-7 col-lg-7">
+                        <select class="form-control" id="distrito" name="distrito">
+                            <option selected>Distrito</option>
+                            <option value="0">Distrito_1</option>
+                            <option value="1">Distrito_2</option>
+                            <option value="2">Distrito_3</option>
+                            <option value="3">Distrito_4</option>
+                            <option value="4">Distrito_5</option>
+                            <option value="5">Distrito_6</option>
+                            <option value="6">Distrito_7</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row g-3 align-items-center">
+                    <div class="col-sm-12 col-md-5 col-lg-5">
+                        <label for="unidade_sanitaria" class="col-form-label float-right text-muted">Unidade Sanitária:</label>
+                    </div>
+                    <div class="col-sm-12 col-md-7 col-lg-7">
+                        <select class="form-control" id="unidade_sanitaria" name="unidade_sanitaria">
+                            <option selected>Unidade Sanitária</option>
+                            <option value="0">Unid_Sani_1</option>
+                            <option value="1">Unid_Sani_2</option>
+                            <option value="2">Unid_Sani_3</option>
+                            <option value="3">Unid_Sani_4</option>
+                            <option value="4">Unid_Sani_5</option>
+                            <option value="5">Unid_Sani_6</option>
+                            <option value="6">Unid_Sani_7</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3 bg-light mx-auto">
+                <div class="row">
+                    <div class="text-center col-12 mt-5">
+                        <h6 class="text-muted"><strong>DADOS DA CRIANÇA</strong></h6> 
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <label for="nr_de_identificacao" class="col-form-label float-left text-muted">NID:</label>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <input type="text" id="nr_de_identificacao" class="form-control" name="nr_de_identificacao">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <label for="nome_completo" class="col-form-label float-left text-muted">Nome Completo:</label>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <input type="text" id="nome_completo" class="form-control" name="nome_completo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <label for="data_nascimento" class="col-form-label float-left text-muted">Data de Nascimento:</label>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <input type="datetime-local" id="data_nascimento" class="form-control" name="data_nascimento">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3 bg-light">
+                <div class="row">
+                    <div class="text-center col-12 mt-5">
+                        <h6 class="text-muted"><strong>DADOS DO RESPONSÁVEL</strong></h6> 
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <label for="nr_de_identificacao" class="col-form-label float-left text-muted">NID:</label>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <input type="text" id="nr_de_identificacao" class="form-control" name="nr_de_identificacao">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <label for="nome_completo" class="col-form-label float-left text-muted">Nome Completo:</label>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <input type="text" id="nome_completo" class="form-control" name="nome_completo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <label for="con_contacto" class="col-form-label float-left text-muted">Consentimento para contacto:</label>
+                        </div>
+                        <div class="col form-check form-check-inline justify-content-center">
+                            <input class="form-check-input" type="radio" name="con_contacto" value="Sim">
+                            <label class="form-check-label text-muted" for="contacto">Sim:</label>
+                        </div>
+                        <div class="col form-check form-check-inline justify-content-center">
+                            <input class="form-check-input" type="radio" name="con_contacto" value="Nao">
+                            <label class="form-check-label text-muted" for="contacto">Não:</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <label for="nome_completo" class="col-form-label float-left text-muted">Contactos:</label>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 my-2">
+                            <input type="tel" id="contacto" class="form-control" name="contacto" placeholder="848-484-844"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 my-2">
+                            <input type="text" id="contacto_2" class="form-control" name="contacto_2" placeholder="848-484-844"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-5 bg-light mx-auto">
+                <div class="row">
+                    <div class="text-center col-12 mt-5">
+                        <h6 class="text-muted"><strong>DADOS DA REQUISIÇÃO</strong></h6> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <label for="nome_solicitante" class="col-form-label float-left small text-muted">Nome do Solicitante:</label>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <input type="text" id="nome_solicitante" class="form-control" name="nome_solicitante">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <label for="data_solicitacao" class="col-form-label float-left text-muted">Data de Solicitação:</label>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <input type="datetime-local" id="data_solicitacao" class="form-control" name="data_solicitacao">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <label for="data_colheita" class="col-form-label float-left text-muted">Data de Colheita:</label>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <input type="datetime-local" id="data_colheita" class="form-control" name="data_colheita">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <label for="ptv_mae" class="col-form-label float-left text-muted">PTV da Mãe:</label>
+                                </div>
+                                <div class="col form-check form-check-inline justify-content-center">
+                                    <input class="form-check-input" type="radio" name="ptv_mae" value="Sim">
+                                    <label class="form-check-label text-muted" for="ptv_mae">Sim:</label>
+                                </div>
+                                <div class="col form-check form-check-inline justify-content-center">
+                                    <input class="form-check-input" type="radio" name="ptv_mae" value="Nao">
+                                    <label class="form-check-label text-muted" for="ptv_mae">Não:</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <label for="prof_arv_crianca" class="col-form-label float-left text-muted">Profilaxia com ARVs da Criança:</label>
+                                </div>
+                                <div class="col form-check form-check-inline justify-content-center">
+                                    <input class="form-check-input" type="radio" name="prof_arv_crianca" value="Sim">
+                                    <label class="form-check-label text-muted" for="prof_arv_crianca">Sim:</label>
+                                </div>
+                                <div class="col form-check form-check-inline justify-content-center">
+                                    <input class="form-check-input" type="radio" name="prof_arv_crianca" value="Nao">
+                                    <label class="form-check-label text-muted" for="prof_arv_crianca">Não:</label>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <label for="tipo_colheita" class="col-form-label float-left small text-muted">Tipo de Colheita:</label>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <select class="form-control" id="tipo_colheita" name="tipo_colheita">
+                                        <option selected>colheita</option>
+                                        <option value="1">colheita_2</option>
+                                        <option value="2">colheita_2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <label for="tipo_colheita" class="col-form-label float-left small text-muted">Tipo de Amostra:</label>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <select class="form-control" id="tipo_amostra" name="tipo_amostra">
+                                        <option selected>amostra</option>
+                                        <option value="1">amostra_2</option>
+                                        <option value="2">amostra_2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <label for="prof_arv_crianca" class="col-form-label float-left text-muted">Tipo de Processamento:</label>
+                                </div>
+                                <div class="col form-check form-check-inline justify-content-center">
+                                    <input class="form-check-input" type="radio" name="tipo_processamento" value="convencional">
+                                    <label class="form-check-label text-muted" for="prof_arv_crianca">Conv:</label>
+                                </div>
+                                <div class="col form-check form-check-inline justify-content-center">
+                                    <input class="form-check-input" type="radio" name="tipo_processamento" value="mPima">
+                                    <label class="form-check-label text-muted" for="prof_arv_crianca">Mpima:</label>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-sm-12 col-md-12 col-lg-12 mb-4">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <label for="cod_amostra_anterior" class="col-form-label float-left small text-muted">Código da Amostra Anterior:</label>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <input type="text" id="cod_amostra_anterior" class="form-control" name="cod_amostra_anterior">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5 justify-content-md-end">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row g-3 align-items-center">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <label for="resultado" class="col-form-label float-right text-muted"><strong>Resultado:</strong></label>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 align-items-center float-right">
+                        <input type="text" id="resultado" class="form-control" name="resultado">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5 justify-content-md-center">
+            <button class="col-md-3 btn btn-success m-3 btn-block" type="submit">Salvar</button>
+            <button class="col-md-3 btn btn-secondary m-3 btn-block" type="button" style="margin-top: 0px;">Cancelar</button>
+        </div>
+    </form>
+</body>
+</html>
