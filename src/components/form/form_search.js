@@ -6,7 +6,7 @@ class FormSeach extends Component {
     return (
         <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6">
-                <div className="row g-3 align-items-center">
+                <div className="row g-3 align-items-right">
                     <div className="col-sm-12 col-md-12 col-lg-12">
                         <label for="nr_de_ordem" className="col-form-label float-left text-muted">Nr. Ordem:</label>
                     </div>
