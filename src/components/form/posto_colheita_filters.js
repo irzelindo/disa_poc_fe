@@ -7,10 +7,10 @@ class PostoColheitaHeaders extends Component {
         <div className="row mb-4">
         <div className="col-sm-12 col-md-12 col-lg-4">
             <div className="row g-3 align-items-center">
-                <div className="col-sm-12 col-md-5 col-lg-5">
+                <div className="col-sm-12 col-md-12 col-lg-5">
                     <label for="provincia" className="col-form-label float-right text-muted">Província:</label>
                 </div>
-                <div className="col-sm-12 col-md-7 col-lg-7">
+                <div className="col-sm-12 col-md-12 col-lg-7">
                     <select className="form-control" id="provincia" name="provincia">
                         <option selected>Província</option>
                         <option value="0">Maputo Província</option>
@@ -30,10 +30,10 @@ class PostoColheitaHeaders extends Component {
         </div>
         <div className="col-sm-12 col-md-12 col-lg-4">
             <div className="row g-3 align-items-center">
-                <div className="col-sm-12 col-md-5 col-lg-5">
+                <div className="col-sm-12 col-md-12 col-lg-5">
                     <label for="distrito" className="col-form-label float-right text-muted">Distrito:</label>
                 </div>
-                <div className="col-sm-12 col-md-7 col-lg-7">
+                <div className="col-sm-12 col-md-12 col-lg-7">
                     <select className="form-control" id="distrito" name="distrito">
                         <option selected>Distrito</option>
                         <option value="0">Distrito_1</option>
@@ -49,10 +49,10 @@ class PostoColheitaHeaders extends Component {
         </div>
         <div className="col-sm-12 col-md-12 col-lg-4">
             <div className="row g-3 align-items-center">
-                <div className="col-sm-12 col-md-5 col-lg-5">
+                <div className="col-sm-12 col-md-12 col-lg-5">
                     <label for="unidade_sanitaria" className="col-form-label float-right text-muted">Unidade Sanitária:</label>
                 </div>
-                <div className="col-sm-12 col-md-7 col-lg-7">
+                <div className="col-sm-12 col-md-12 col-lg-7">
                     <select className="form-control" id="unidade_sanitaria" name="unidade_sanitaria">
                         <option selected>Unidade Sanitária</option>
                         <option value="0">Unid_Sani_1</option>
